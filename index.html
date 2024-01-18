@@ -45,10 +45,11 @@
 
 
     <header>
-        <video autoplay playisline loop>
+        <video autoplay playisline loop id="myvideo">
             <source src="./assets/img/header-2.mp4" type="video/mp4">
             Your browser does not support the video tag..
         </video>
+        <script> document.getElementById('myvideo').play();  </script>
         <div class="overlay">
             <div class="overlay-content">
                 <h1 class="overlay-first-text">Aumentamos tus ingresos de alquiler en 60 días</h1> 
