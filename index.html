@@ -45,7 +45,7 @@
 
 
     <header>
-        <video autoplay muted playisline loop id="myvideo">
+        <video autoplay muted playisline loop >
             <source src="./assets/img/header-2.mp4" type="video/mp4">
             Your browser does not support the video tag..
         </video>
@@ -157,25 +157,6 @@
 
     <script src="./assets/js/app.js"></script>
 
-    <script>
-        function toggleMute() {
-
-  var video=document.getElementById("myvideo");
-
-  if(video.muted){
-    video.muted = false;
-  } else {
-    debugger;
-    video.muted = true;
-    video.play()
-  }
-
-}
-
-$(document).ready(function(){
-  setTimeout(toggleMute,3000);
-})
-    </script>
 
     <script>
         var swiper = new Swiper(".swiper", {
