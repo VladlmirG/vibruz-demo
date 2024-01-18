@@ -49,7 +49,7 @@
             <source src="./assets/img/header-2.mp4" type="video/mp4">
             Your browser does not support the video tag..
         </video>
-        <script> document.getElementById('myvideo').play();  </script>
+    
         <div class="overlay">
             <div class="overlay-content">
                 <h1 class="overlay-first-text">Aumentamos tus ingresos de alquiler en 60 días</h1> 
@@ -156,6 +156,26 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script src="./assets/js/app.js"></script>
+
+    <script>
+        function toggleMute() {
+
+  var video=document.getElementById("myvideo");
+
+  if(video.muted){
+    video.muted = false;
+  } else {
+    debugger;
+    video.muted = true;
+    video.play()
+  }
+
+}
+
+$(document).ready(function(){
+  setTimeout(toggleMute,3000);
+})
+    </script>
 
     <script>
         var swiper = new Swiper(".swiper", {
