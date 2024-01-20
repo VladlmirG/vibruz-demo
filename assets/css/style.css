@@ -1,3 +1,4 @@
+/*===========================GLOBAL VARIABLES=======================*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;300;400;500;600;700&family=Montserrat:wght@100;300;400;500;600;700&family=Poppins:wght@100;300;400;500;700&display=swap');
 
 *{
@@ -164,7 +165,7 @@ section{
 		transform: rotate(45deg) translate(20px, 20px);
 	}
 }
-
+/*====================================================================*/
 
 
 
@@ -175,7 +176,7 @@ section{
 }
 
 .nav{
-    z-index: 2;
+    z-index: 1000;
     width: 100%;
     height: 65px;
     position: fixed;
@@ -335,16 +336,12 @@ section{
 
 
 
-
-
-
-
-
+/*===================================HEADER COMPONENT================================*/
 header {
     position: relative;
     width: 100%;
     height: 100vh;
-/*     overflow: hidden; */
+    /* overflow: hidden; */
 }
 
 video {
@@ -359,11 +356,6 @@ video {
     left: 0;
     width: 100%;
     height: 100%;
-    /* background: rgb(0,26,49);
-    background: linear-gradient(90deg,  rgba(0,26,49,0.9920343137254902) 0%, rgba(8,80,60,0.7399334733893557) 100%); */
-
-    /* background: rgb(8,80,60);
-    background: linear-gradient(90deg, rgba(8,80,60,0.9836309523809523) 0%, rgba(0,26,49,0.639093137254902) 100%); */
 
     background: rgb(8,80,60);
     background: linear-gradient(180deg, rgba(8,80,60,0.4738270308123249) 0%, rgba(0,26,49,1) 100%);
@@ -381,9 +373,6 @@ video {
 }
 
 .overlay-content .overlay-first-text {
-    /* font-weight: 300; */
-    /* letter-spacing: 2px; */
-    /* text-shadow: 1px 2px 5px rgba(255, 255, 255, 0.91); */
     font-size: 2.2rem;
     font-weight: 900;
     letter-spacing: 0.8px;
@@ -437,7 +426,45 @@ video {
 
 
 
+.mute-toggle {
+  position: absolute;
+  top: 80%;
+  right: 7%;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.2rem;
+  z-index: 3;
 
+  background-color: rgba(21, 155, 77, 0.4) ;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  text-align: center;
+
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 99;
+  animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  box-shadow: 0 0 0 0 var(--mint-green);
+  transition: all .45s ease;
+}
+
+@-webkit-keyframes pulse {to {box-shadow: 0 0 0 15px rgba(232, 76, 61, 0);}}
+@-moz-keyframes pulse {to {box-shadow: 0 0 0 15px rgba(232, 76, 61, 0);}}
+@-ms-keyframes pulse {to {box-shadow: 0 0 0 15px rgba(232, 76, 61, 0);}}
+@keyframes pulse {to {box-shadow: 0 0 0 15px rgba(232, 76, 61, 0);}}
+
+/*===================================================================*/
+
+
+
+
+
+
+
+/*===================================PROPIEDADES COMPONENT================================*/
 .carousel {
     position: relative;
     width: calc(min(90rem, 90%));
@@ -455,22 +482,7 @@ video {
     color: var(--subtle-cyan);
   }
   
-  /* .carousel > div h1 {
-    text-transform: uppercase;
-    letter-spacing: 0.8px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 900;
-    font-size: clamp(3.4375rem, 3.25rem + 0.75vw, 4rem);
-    background-color: #159b4d;
-    background-image: linear-gradient(45deg, #159b4d, #d3f1e1);
-    background-size: 100%;
-    background-repeat: repeat;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
-  } */
-  
+
   .carousel > div hr {
     display: block;
     background: var(--subtle-cyan);
@@ -485,31 +497,10 @@ video {
     font-size: 0.8rem;
   }
   
-  /* .carousel a {
-    display: inline-block;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #717171;
-    font-weight: 500;
-    background: #fff;
-    border-radius: 3.125rem;
-    transition: 0.3s ease-in-out;
-  } */
-  
-  /* .carousel > div > a {
-    border: 2px solid #c2c2c2;
-    margin-top: 2.188rem;
-    padding: 0.625rem 1.875rem;
-  }
-  
-  .carousel > div > a:hover {
-    border: 0.125rem solid #005baa;
-    color: #005baa;
-  } */
 
   
   
-
+/*==============SWIPER STYLING=============*/
 .swiper {
     width: 100%;
     padding-top: 3.125rem;
@@ -614,9 +605,9 @@ video {
   .swiper-3d .swiper-slide-shadow-right {
     background-image: none;
   }
-  
+  /*===================================================================*/
 
-
+/*=================PRIPIEDADES COMPONET SPECIFIC MEDIA QUERIES================*/
   @media screen and (min-width: 48rem) {
     .carousel {
       display: flex;
@@ -633,7 +624,65 @@ video {
       width: 85%;
     }
   }
+  /*========================================================================*/
 
+
+
+
+
+
+
+
+/*===================================================================*/
+  /* .container {
+    width: 100%;
+    height: 100%;
+    padding: 0px 8%;
+  } */
+  
+  .services h1 {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  
+  
+  .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+  }
+  
+  .service {
+    text-align: center;
+    padding: 25px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    background: transparent;
+    transition: transform 0.5s, background 0.5s;
+  }
+  
+  .service i {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #303ef7;
+  }
+  
+  .service h2 {
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  
+  .service:hover {
+    background: #303ef7;
+    color: #fff;
+    transform: scale(1.05);
+  }
+  
+  .service:hover i {
+    color: #fff;
+  }
+/*===================================================================*/
 
 
 
@@ -661,6 +710,10 @@ video {
 
 /*==============================GENERAL MOVBILE SCREENS QUERIES===================*/
 @media screen and (max-width:768px) {
+
+    .section-titles{
+      font-size: 1.5rem;
+    }
     
     .nav-container{
         margin: 0;
@@ -730,6 +783,19 @@ video {
     }
 
     .button {
-        font-size: 1rem;
+        font-size: 0.8rem;
+    }
+
+    .mute-toggle{
+      font-size: 1rem;
+      width: 45px;
+      height: 45px;
+      line-height: 5px;
+    }
+
+
+
+    .carousel > div span {
+      font-size: 0.8rem;
     }
 }
