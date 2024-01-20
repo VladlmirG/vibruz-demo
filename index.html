@@ -11,6 +11,7 @@
 
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Vibruz</title>
 </head>
@@ -45,11 +46,10 @@
 
 
     <header>
-        <video autoplay muted playsinline loop >
+        <video autoplay muted loop playsinline id="backgroundVideo">
             <source src="./assets/img/header-2.mp4" type="video/mp4">
             Your browser does not support the video tag..
         </video>
-    
         <div class="overlay">
             <div class="overlay-content">
                 <h1 class="overlay-first-text">Aumentamos tus ingresos de alquiler en 60 días</h1> 
@@ -65,6 +65,10 @@
                 </div>
             </div>
         </div>
+
+        <button class="mute-toggle" title="Audio controller" onclick="toggleMute()">
+          <i id="muteIcon" class="fas fa-volume-mute"></i>
+      </button>
     </header>
 
 
@@ -142,8 +146,76 @@
         </section>
         
 
-        <!-- <section>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae consectetur, velit sed natus quibusdam repudiandae magnam nostrum iste culpa, possimus provident odio? Qui voluptates maiores veritatis, fugiat eveniet saepe rerum modi fuga deserunt veniam asperiores, reiciendis adipisci. Eaque aut esse consequuntur quaerat sint, doloremque eos officia obcaecati similique mollitia aliquid excepturi inventore culpa exercitationem totam nemo error impedit, reiciendis corrupti doloribus sed nisi est sequi itaque. Autem expedita, nesciunt reprehenderit nam perspiciatis blanditiis sunt vel perferendis amet, corporis consequatur asperiores accusantium quas voluptate velit natus! Quos animi neque dolorum atque aspernatur dolores voluptate. Animi fugit aut voluptatibus ipsum esse? Aliquid, atque provident. Amet, sit quas illo cum beatae aperiam sed, vitae atque hic non id eveniet cupiditate dolorum molestiae ipsa nihil libero ad nesciunt quia ab unde tempore? Nisi optio amet quis consequuntur, soluta quos vitae. Sunt, reiciendis. Est ad dolor, consequuntur ipsam corporis ipsum. Temporibus expedita, accusantium vero dicta ad magnam voluptates molestias, esse error hic repudiandae ratione officiis praesentium voluptas molestiae quas quia dolores eligendi omnis modi? Dolor temporibus nesciunt nostrum aperiam dolorem voluptas, nemo voluptatibus! Delectus ipsam, deleniti perferendis commodi officiis iste eligendi impedit id hic, facilis architecto quo? Rerum et architecto corrupti. Voluptates eum fuga laudantium doloribus tenetur obcaecati, culpa ipsam minima veniam nam voluptate, vel dolorum dignissimos recusandae sequi a odio magni enim eligendi! Itaque doloremque iusto doloribus aut earum, enim minima obcaecati dolorem autem corporis quisquam esse eos. Dicta, ducimus, tenetur debitis iure accusamus ipsam quaerat et, ratione earum eaque suscipit natus doloremque similique. Praesentium reiciendis veniam amet mollitia obcaecati, quibusdam iure nisi blanditiis vero eaque accusantium? Dignissimos corrupti dolores pariatur recusandae reprehenderit earum hic, perferendis aut repellat! Iste quasi officiis praesentium odit dolorum aliquid minima et delectus libero ducimus, rem atque ipsum eos optio fugit sit nam voluptas. Perferendis consequatur suscipit quasi, quae eveniet sequi tenetur? Nulla voluptas natus ipsa. Vel reiciendis, aliquid ea quibusdam sequi odio dolor enim vero corrupti magni reprehenderit libero temporibus deserunt voluptates, repellendus voluptatibus. Repellat architecto tempora quos voluptas corrupti sed, alias, quibusdam distinctio labore a assumenda quae libero sapiente, placeat odio culpa error earum ex dolorum corporis. Sunt, velit, quos maxime incidunt porro iure, accusamus temporibus ratione nihil saepe aperiam? Libero, ducimus incidunt neque temporibus repellendus labore facere obcaecati exercitationem rerum voluptatum doloribus? Recusandae dolores libero totam aliquid voluptatum expedita voluptas magnam accusamus laudantium, earum consequuntur, quasi rerum quidem et voluptatem ipsum veniam iure laborum! Illo hic ex ut non quos? Officia nulla animi possimus quod eos, illo unde cupiditate, voluptatem atque exercitationem quae nihil totam voluptate architecto similique. Laudantium fuga maxime pariatur ab voluptatibus culpa consectetur magni repellendus impedit magnam blanditiis inventore eveniet deserunt vitae deleniti, doloremque animi labore vero rerum numquam maiores. Ad assumenda quasi voluptate tempore tempora nobis nam. Quibusdam ducimus quam ex sit, soluta sunt corrupti neque ab natus alias vero mollitia, quas dolore molestiae minus corporis quod iure fugit accusamus laudantium dolorem? Accusamus, nisi labore? Provident nobis quaerat delectus quidem consequatur quia odio possimus! Iusto qui sed tenetur aspernatur dolores nisi nulla!</p>
+        <!-- <section class="services">
+          <div class="services-container">
+            <h1 class="section-titles">Our Services</h1>
+            <div class="row">
+              <div class="service">
+                <i class="fas fa-laptop-code"></i>
+                <h2>Web Design</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
+                  quae?
+                </p>
+              </div>
+              <div class="service">
+                <i class="fas fa-chart-line"></i>
+                <h2>Marketing</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
+                  quae?
+                </p>
+              </div>
+              <div class="service">
+                <i class="fab fa-sketch"></i>
+                <h2>Graphics</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
+                  quae?
+                </p>
+              </div>
+              <div class="service">
+                <i class="fas fa-database"></i>
+                <h2>Data Analysis</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
+                  quae?
+                </p>
+              </div>
+              <div class="service">
+                <i class="fas fa-mobile-alt"></i>
+                <h2>App Development</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
+                  quae?
+                </p>
+              </div>
+              <div class="service">
+                <i class="fas fa-file-invoice"></i>
+                <h2>Accounting</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
+                  quae?
+                </p>
+              </div>
+              <div class="service">
+                <i class="fas fa-money-check-alt"></i>
+                <h2>Payroll</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
+                  quae?
+                </p>
+              </div>
+              <div class="service">
+                <i class="fas fa-network-wired"></i>
+                <h2>Networking</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
+                  quae?
+                </p>
+              </div>
+            </div>
+          </div>
         </section> -->
     </main>
 
@@ -156,6 +228,25 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script src="./assets/js/app.js"></script>
+
+    <script>
+      var video = document.getElementById("backgroundVideo");
+      var muteIcon = document.getElementById("muteIcon");
+  
+      function toggleMute() {
+          if (video.muted) {
+              video.muted = false;
+              muteIcon.classList.remove("fa-volume-mute");
+              muteIcon.classList.add("fa-volume-up");
+          } else {
+              video.muted = true;
+              muteIcon.classList.remove("fa-volume-up");
+              muteIcon.classList.add("fa-volume-mute");
+          }
+      }
+  </script>
+
+
 
 
     <script>
