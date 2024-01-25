@@ -21,4 +21,18 @@ window.addEventListener('scroll', scrollHeader)
 
 
 
+function playVideo() {
+    var video = document.getElementById('video');
+    var playButton = document.getElementById('playButton');
+    var overlay = document.getElementById('overlay');
+
+    // Play the video
+    video.play();
+
+    // Hide the play button
+    playButton.style.display = 'none';
+
+    // Remove the dimming overlay
+    overlay.style.display = 'none';
+}
 
