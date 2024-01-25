@@ -31,7 +31,8 @@
                     <li><a href="#propiedades">Propiedades</a></li>
                     <li><a href="#services">Servicios</a></li>
                     <li><a href="#benefits">Beneficios</a></li>
-                    <li><a href="#">Link 5</a></li>
+                    <li><a href="#faq">Faq</a></li>
+                    <li><a href="#">Link</a></li>
                 </ul>
             </div>
             <div class="media_button">
@@ -46,7 +47,27 @@
 
 
     <header>
-        <video autoplay muted loop id="backgroundVideo">
+    <div class="header-content">
+      <div class="text-container">
+        <h1 class="overlay-first-text">Aumentamos tus ingresos de alquiler en 60 días</h1> 
+        <h2 class="overlay-second-text">sin que hagas nada y si no cumplimos, no cobramos hasta conseguirlo.</h2>
+        <h1 class="overlay-third-text">Sin permanencia.</h1>
+        <a href="https://forms.gle/kjnpJTM5iDwLwtgX6" target="_blank" class="button">Evalúa tu Propiedad Gratis</a>
+        <p class="overlay-action-text">Consulta rápida y sin compromiso</p>
+    </div>
+
+    <div class="video-container">
+    <div class="overlay" id="overlay"></div>
+    <button id="playButton" onclick="playVideo()"><i class="fas fa-play"></i></button>
+    <video controls width="50%" id="video">
+      <source src="./assets/img/header-2.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+   </div>
+   </div>
+
+
+        <!-- <video autoplay muted loop id="backgroundVideo">
             <source src="./assets/img/header-2.mp4" type="video/mp4">
             Your browser does not support the video tag..
         </video>
@@ -68,7 +89,7 @@
 
         <button class="mute-toggle" title="Audio controller" onclick="toggleMute()">
           <i id="muteIcon" class="fas fa-volume-mute"></i>
-      </button>
+      </button> -->
     </header>
 
 
@@ -240,10 +261,10 @@
             </div>
           </div>
         </section>
-      </div>
+        </div>
 
 
-      <div class="comments-background">
+    
       <section class="marquee-wrapper">
         <div class="marquee-container">
           <div class="marquee-block">
@@ -377,7 +398,7 @@
               </span>
             </div>
           </div>
-          <!------------------------------------------------------------------------------------------------------------->
+      <!------------------------------------------------------------------------------------------------------------->
           <div class="marquee-block">
             <div class="marquee-inner to-right">
               <span>
@@ -511,7 +532,48 @@
           </div>
         </div>
       </section>
+  
+
+
+      <div class="grid-background">
+      <section class="faq" id="faq">
+    <h1 class="section-titles">Preguntas Frecuentes</h1>
+    <div class="accordion">
+
+      <div class="accordion-item">
+          <input type="checkbox" id="accordion1">
+          <label for="accordion1" class="accordion-item-title"><span class="icon"></span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, accusantium.?</label>
+          <div class="accordion-item-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui repudiandae expedita sed earum, error mollitia nobis veritatis, iure quae architecto, beatae saepe nisi sit! Optio sequi libero eos commodi nisi.</div>
+      </div>
+  
+      <div class="accordion-item">
+          <input type="checkbox" id="accordion2">
+          <label for="accordion2" class="accordion-item-title"><span class="icon"></span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt nisi fugiat, est voluptas animi exercitationem.?</label>
+          <div class="accordion-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid at laborum, nisi architecto recusandae sed amet voluptatibus ut, quae iure sapiente suscipit enim quas delectus, sequi sint nemo blanditiis quam? Est nihil voluptatem cumque fuga quod unde error adipisci nam repudiandae laudantium rerum repellendus quis, deserunt a cum culpa eveniet autem modi ipsum aliquam, doloremque repellat, voluptatibus in vitae? Voluptas recusandae ducimus ipsum officia consequuntur sapiente delectus ipsam. Amet non quaerat, expedita hic dolorum dolore fuga id corporis odit, repudiandae blanditiis vel soluta ab aliquam quas magnam possimus tenetur perferendis suscipit. Ut porro aperiam soluta facere laborum ipsam, illo earum.</div>
+      </div>
+  
+      <div class="accordion-item">
+          <input type="checkbox" id="accordion3">
+          <label for="accordion3" class="accordion-item-title"><span class="icon"></span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, hic.?</label>
+          <div class="accordion-item-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi quidem consequuntur facilis doloribus molestias quo eos, laudantium ex, vitae expedita voluptatibus excepturi quod placeat rerum dolorem eligendi vel necessitatibus tempore officiis nemo maiores iure debitis quos? Perspiciatis sint esse id iure ut laborum, beatae incidunt consequuntur, deserunt facilis, quis tempora eaque totam ipsa. Deserunt amet eos delectus perspiciatis. Ipsam dolores itaque asperiores? Eligendi consequatur nihil corrupti nobis? Vel maiores architecto repudiandae, a, soluta at nobis illo officiis, doloremque debitis tenetur itaque asperiores? Tenetur, magni quis! Praesentium necessitatibus, eum modi neque debitis nulla numquam quia culpa sit, odit molestias earum nostrum minus omnis illo reiciendis consequatur, sed beatae est aliquid perferendis voluptatum distinctio. Neque excepturi inventore, vitae in saepe incidunt quisquam. Quisquam, quos dicta. Consequatur nostrum incidunt doloribus iure nulla voluptates vero illum corporis, mollitia asperiores, odio quis! Repellendus dolorum perferendis distinctio impedit ad itaque assumenda nemo a delectus, voluptatum quod voluptate consequuntur modi accusamus repudiandae atque odit et? Ratione dicta delectus voluptatum nihil ea! Excepturi ex, tempora at enim odit quis atque provident quae aut. Optio aperiam porro aspernatur omnis, a molestiae quaerat voluptate nostrum labore, odio nulla obcaecati neque cum aliquam, eum temporibus ullam quae fugit sunt soluta ex?</div>
+      </div>
+  
+      <div class="accordion-item">
+          <input type="checkbox" id="accordion4">
+          <label for="accordion4" class="accordion-item-title"><span class="icon"></span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, unde?</label>
+          <div class="accordion-item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non cumque blanditiis explicabo, voluptatem fugiat cupiditate ab animi dolorem dignissimos tempore assumenda sunt repellendus aut rerum reprehenderit porro ad dolor odit, quisquam omnis nam in quibusdam voluptas qui? Dignissimos fugiat repellat, quidem at ad exercitationem labore obcaecati minus, nesciunt eaque perferendis animi architecto a quis vel, nam tempore! Aut dicta sequi doloremque enim quas beatae non unde. Maxime aliquid harum blanditiis.</div>
+      </div>
+  
+      <div class="accordion-item">
+          <input type="checkbox" id="accordion5">
+          <label for="accordion5" class="accordion-item-title"><span class="icon"></span>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, aliquid eos. Repudiandae?</label>
+          <div class="accordion-item-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe quam debitis, veritatis odit aliquid nisi mollitia harum exercitationem molestias quod velit asperiores autem eius aliquam amet fugit officiis ipsam officia iusto. Similique earum est ab recusandae maxime pariatur nobis rem voluptatum neque molestiae deleniti error quaerat labore cupiditate eius minus suscipit ipsum, repellendus laudantium? Suscipit error dolores laudantium id possimus.</div>
+      </div>
+
     </div>
+      </section>
+      </div>
+
     </main>
 
 
@@ -524,7 +586,7 @@
 
     <script src="./assets/js/app.js"></script>
 
-    <script>
+    <!-- <script>
       var video = document.getElementById("backgroundVideo");
       var muteIcon = document.getElementById("muteIcon");
   
@@ -539,9 +601,7 @@
               muteIcon.classList.add("fa-volume-mute");
           }
       }
-    </script>
-
-
+    </script> -->
 
 
     <script>
