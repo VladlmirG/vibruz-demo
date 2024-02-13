@@ -693,10 +693,11 @@ video {
     color: #fff;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     line-height: 1.4;
     margin-bottom: 0.625rem;
-    padding: 0 0 0 1.563rem;
+    /* padding: 0 0 0 1.563rem; */
+    padding: 0 1.563rem;
     text-transform: uppercase;
   }
   
@@ -709,7 +710,7 @@ video {
     font-size: 0.75rem;
     display: -webkit-box;
     -webkit-line-clamp: 6;
-    -webkit-box-orient: vertical;
+    /* -webkit-box-orient: vertical; */
     overflow: hidden;
   }
   
@@ -737,31 +738,103 @@ video {
   
   .swiper-slide--one {
     background: linear-gradient(to top, #001a31, #001a3150, #2c536400),
-      url("../img/carousel/placeholder-1.jpg")
+      url("../img/carousel/andalucia.jpg")
         no-repeat 50% 50% / cover;   
   }
   
   .swiper-slide--two {
     background: linear-gradient(to top, #001a31, #001a3150, #2c536400),
-      url("../img/carousel/placeholder-2.jpg")
+      url("../img/carousel/cataluna.jpg")
         no-repeat 50% 50% / cover;
   }
   
   .swiper-slide--three {
     background: linear-gradient(to top, #001a31, #001a3150, #2c536400),
-      url("../img/carousel/placeholder-3.jpg")
+      url("../img/carousel/madrid.jpg")
         no-repeat 50% 50% / cover;
   }
   
   .swiper-slide--four {
     background: linear-gradient(to top, #001a31, #001a3150, #2c536400),
-      url("../img/carousel/placeholder-4.jpg")
+      url("../img/carousel/valenciana.jpg")
         no-repeat 50% 50% / cover;
   }
   
   .swiper-slide--five {
     background: linear-gradient(to top, #001a31, #001a3150, #2c536400),
-      url("../img/carousel/placeholder-5.jpg")
+      url("../img/carousel/vasco.jpg")
+        no-repeat 50% 50% / cover;
+  }
+
+  .swiper-slide--six {
+    background: linear-gradient(to top, #001a31, #001a3150, #2c536400),
+      url("../img/carousel/galicia.jpg")
+        no-repeat 50% 50% / cover;
+  }
+
+  .swiper-slide--seven {
+    background: linear-gradient(to top, #001a31, #001a3150, #2c536400),
+      url("../img/carousel/canarias.jpg")
+        no-repeat 50% 50% / cover;
+  }
+
+  .swiper-slide--eight {
+    background: linear-gradient(to top, #001a31, #001a3150, #2c536400),
+      url("../img/carousel/baleares.jpg")
+        no-repeat 50% 50% / cover;
+  }
+
+  .swiper-slide--nine {
+    background: linear-gradient(to top, #001a31, #001a3150, #2c536400),
+      url("../img/carousel/aragon.jpg")
+        no-repeat 50% 50% / cover;
+  }
+
+  .swiper-slide--ten {
+    background: linear-gradient(to top, #001a31, #001a3150, #2c536400),
+      url("../img/carousel/castilla.jpg")
+        no-repeat 50% 50% / cover;
+  }
+
+  .swiper-slide--eleven {
+    background: linear-gradient(to top, #001a31, #001a3150, #2c536400),
+      url("../img/carousel/mancha.jpg")
+        no-repeat 50% 50% / cover;
+  }
+
+  .swiper-slide--twelve {
+    background: linear-gradient(to top, #001a31, #001a3150, #2c536400),
+      url("../img/carousel/extremadura.jpg")
+        no-repeat 50% 50% / cover;
+  }
+
+  .swiper-slide--thirteen {
+    background: linear-gradient(to top, #001a31, #001a3150, #2c536400),
+      url("../img/carousel/asturias.jpg")
+        no-repeat 50% 50% / cover;
+  }
+
+  .swiper-slide--fourteen {
+    background: linear-gradient(to top, #001a31, #001a3150, #2c536400),
+      url("../img/carousel/cantabria.jpg")
+        no-repeat 50% 50% / cover;
+  }
+
+  .swiper-slide--fifthteen {
+    background: linear-gradient(to top, #001a31, #001a3150, #2c536400),
+      url("../img/carousel/rioja.jpg")
+        no-repeat 50% 50% / cover;
+  }
+
+  .swiper-slide--sixteen {
+    background: linear-gradient(to top, #001a31, #001a3150, #2c536400),
+      url("../img/carousel/murcia.jpg")
+        no-repeat 50% 50% / cover;
+  }
+
+  .swiper-slide--seventeen {
+    background: linear-gradient(to top, #001a31, #001a3150, #2c536400),
+      url("../img/carousel/navarra.jpg")
         no-repeat 50% 50% / cover;
   }
   
@@ -814,7 +887,14 @@ video {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    row-gap: 5rem;
   }
+
+  .services-container .services-section h5{
+    text-align: center;
+    letter-spacing: 1px;
+  }
+
   .services-container .services-section .card {
     width: 350px;
     text-align: center;
@@ -1140,6 +1220,38 @@ background: linear-gradient(180deg, rgba(8,80,60,0.4738270308123249) 0%, rgba(0,
   justify-content: center;
   gap: 50px;
 }
+
+.contact-block p{
+  text-align: center;
+}
+
+.contact-info{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.contact-info a{
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--celestial-blue);
+  transition: all .45s ease;
+}
+
+.contact-info a:hover{
+  color: var(--mint-green);
+}
+
+.contact-info i{
+  color: var(--mint-green);
+  font-size: 1.5rem;
+}
+
 
 .contact img{
   width: 30px;
