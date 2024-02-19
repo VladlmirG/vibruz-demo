@@ -702,9 +702,10 @@ video {
   }
   
   .swiper-slide p {
-    color: #dadada;
-    font-family: "Roboto", sans-serif;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
     font-weight: 300;
+    letter-spacing: 1px;
     padding: 0 1.563rem;
     line-height: 1.5;
     font-size: 0.75rem;
@@ -737,103 +738,103 @@ video {
   }
   
   .swiper-slide--one {
-    background: linear-gradient(to top, #001a31, #001a3150, #2c536400),
+    background: linear-gradient(to top, #001a31, #001a319d, #2c536474),
       url("../img/carousel/andalucia.jpg")
         no-repeat 50% 50% / cover;   
   }
   
   .swiper-slide--two {
-    background: linear-gradient(to top, #001a31, #001a3150, #2c536400),
+    background: linear-gradient(to top, #001a31, #001a319d, #2c536474),
       url("../img/carousel/cataluna.jpg")
         no-repeat 50% 50% / cover;
   }
   
   .swiper-slide--three {
-    background: linear-gradient(to top, #001a31, #001a3150, #2c536400),
+    background: linear-gradient(to top, #001a31, #001a319d, #2c536474),
       url("../img/carousel/madrid.jpg")
         no-repeat 50% 50% / cover;
   }
   
   .swiper-slide--four {
-    background: linear-gradient(to top, #001a31, #001a3150, #2c536400),
+    background: linear-gradient(to top, #001a31, #001a319d, #2c536474),
       url("../img/carousel/valenciana.jpg")
         no-repeat 50% 50% / cover;
   }
   
   .swiper-slide--five {
-    background: linear-gradient(to top, #001a31, #001a3150, #2c536400),
+    background: linear-gradient(to top, #001a31, #001a319d, #2c536474),
       url("../img/carousel/vasco.jpg")
         no-repeat 50% 50% / cover;
   }
 
   .swiper-slide--six {
-    background: linear-gradient(to top, #001a31, #001a3150, #2c536400),
+    background: linear-gradient(to top, #001a31, #001a319d, #2c536474),
       url("../img/carousel/galicia.jpg")
         no-repeat 50% 50% / cover;
   }
 
   .swiper-slide--seven {
-    background: linear-gradient(to top, #001a31, #001a3150, #2c536400),
+    background: linear-gradient(to top, #001a31, #001a319d, #2c536474),
       url("../img/carousel/canarias.jpg")
         no-repeat 50% 50% / cover;
   }
 
   .swiper-slide--eight {
-    background: linear-gradient(to top, #001a31, #001a3150, #2c536400),
+    background: linear-gradient(to top, #001a31, #001a319d, #2c536474),
       url("../img/carousel/baleares.jpg")
         no-repeat 50% 50% / cover;
   }
 
   .swiper-slide--nine {
-    background: linear-gradient(to top, #001a31, #001a3150, #2c536400),
+    background: linear-gradient(to top, #001a31, #001a319d, #2c536474),
       url("../img/carousel/aragon.jpg")
         no-repeat 50% 50% / cover;
   }
 
   .swiper-slide--ten {
-    background: linear-gradient(to top, #001a31, #001a3150, #2c536400),
+    background: linear-gradient(to top, #001a31, #001a319d, #2c536474),
       url("../img/carousel/castilla.jpg")
         no-repeat 50% 50% / cover;
   }
 
   .swiper-slide--eleven {
-    background: linear-gradient(to top, #001a31, #001a3150, #2c536400),
+    background: linear-gradient(to top, #001a31, #001a319d, #2c536474),
       url("../img/carousel/mancha.jpg")
         no-repeat 50% 50% / cover;
   }
 
   .swiper-slide--twelve {
-    background: linear-gradient(to top, #001a31, #001a3150, #2c536400),
+    background: linear-gradient(to top, #001a31, #001a319d, #2c536474),
       url("../img/carousel/extremadura.jpg")
         no-repeat 50% 50% / cover;
   }
 
   .swiper-slide--thirteen {
-    background: linear-gradient(to top, #001a31, #001a3150, #2c536400),
+    background: linear-gradient(to top, #001a31, #001a319d, #2c536474),
       url("../img/carousel/asturias.jpg")
         no-repeat 50% 50% / cover;
   }
 
   .swiper-slide--fourteen {
-    background: linear-gradient(to top, #001a31, #001a3150, #2c536400),
+    background: linear-gradient(to top, #001a31, #001a319d, #2c536474),
       url("../img/carousel/cantabria.jpg")
         no-repeat 50% 50% / cover;
   }
 
   .swiper-slide--fifthteen {
-    background: linear-gradient(to top, #001a31, #001a3150, #2c536400),
+    background: linear-gradient(to top, #001a31, #001a319d, #2c536474),
       url("../img/carousel/rioja.jpg")
         no-repeat 50% 50% / cover;
   }
 
   .swiper-slide--sixteen {
-    background: linear-gradient(to top, #001a31, #001a3150, #2c536400),
+    background: linear-gradient(to top, #001a31, #001a319d, #2c536474),
       url("../img/carousel/murcia.jpg")
         no-repeat 50% 50% / cover;
   }
 
   .swiper-slide--seventeen {
-    background: linear-gradient(to top, #001a31, #001a3150, #2c536400),
+    background: linear-gradient(to top, #001a31, #001a319d, #2c536474),
       url("../img/carousel/navarra.jpg")
         no-repeat 50% 50% / cover;
   }
