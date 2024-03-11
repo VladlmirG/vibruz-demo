@@ -1058,7 +1058,7 @@ background: linear-gradient(180deg, rgba(8,80,60,0.4738270308123249) 0%, rgba(0,
   align-content: center;
   align-items: center;
   justify-content: space-around;
-  width: 350px;
+  /* width: 350px; */
   gap: 1rem;
   background: rgb(8,80,60);
   background: linear-gradient(180deg, rgba(8,80,60,0.4738270308123249) 0%, rgba(0,26,49,1) 100%);
@@ -1068,6 +1068,7 @@ background: linear-gradient(180deg, rgba(8,80,60,0.4738270308123249) 0%, rgba(0,
 
 .tarifas .tarifas-wrapper-1 .tarifas-box span{
   color: var(--cyan);
+  font-size: 5rem;
 }
 
 .tarifas .tarifas-wrapper-1 .tarifas-box h3{
@@ -1152,8 +1153,10 @@ background: linear-gradient(180deg, rgba(8,80,60,0.4738270308123249) 0%, rgba(0,
 .tarifas .tarifas-wrapper-3{
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 1rem;
-
+  width: 100%;
   background: rgb(8,80,60);
   background: linear-gradient(180deg, rgba(8,80,60,0.4738270308123249) 0%, rgba(0,26,49,1) 100%);
   padding: 20px;
@@ -1164,14 +1167,16 @@ background: linear-gradient(180deg, rgba(8,80,60,0.4738270308123249) 0%, rgba(0,
   text-transform: uppercase;
   font-family: var(--title-font);
   letter-spacing: 1px;
+  font-size: 1.5rem;
 }
 
 .tarifas .tarifas-wrapper-3 i{
-  color: var(--cyan);
+  color: var(--subtle-cyan);
 }
 
 .tarifas .tarifas-wrapper-3 span{
-  color: var(--mid-cyan);
+  color: var(--cyan);
+  font-size: 1.5rem;
 }
 
 .tarifas .tarifas-wrapper-3 h5{
