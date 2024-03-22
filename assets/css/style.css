@@ -1029,225 +1029,132 @@ background: linear-gradient(180deg, rgba(8,80,60,0.4738270308123249) 0%, rgba(0,
     color: #fff;
   }
 /*===================================================================*/
-.tarifas .section-titles{
-  text-align: center;
-  margin-bottom: 60px;
-}
 
-.tarifas{
+.tarifas-2{
   display: flex;
   flex-direction: column;
-  align-content: center;
   align-items: center;
-  flex-wrap: wrap;
-
-  margin: 10% 5% 5% 5%;
-}
-
-.tarifas .tarifas-wrapper-1{
-  display: flex;
   justify-content: center;
-  align-items: stretch;
-  gap: 8rem;
   flex-wrap: wrap;
 }
 
-.tarifas .tarifas-wrapper-1 .tarifas-box{
+.tarifas-2 h1{
+  text-align: center;
+}
+
+
+.tarifas-2-wrapper{
   display: flex;
-  flex-direction: column;
-  align-content: center;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
-  /* width: 350px; */
+  justify-content: center;
   gap: 1rem;
-  background: rgb(8,80,60);
-  background: linear-gradient(180deg, rgba(8,80,60,0.4738270308123249) 0%, rgba(0,26,49,1) 100%);
+}
+
+.tarifas-text{
   padding: 30px;
-  border-radius: 20px;
-}
-
-.tarifas .tarifas-wrapper-1 .tarifas-box span{
-  color: var(--cyan);
-  font-size: 5rem;
-}
-
-.tarifas .tarifas-wrapper-1 .tarifas-box h3{
-  font-size: 1.5rem;
-  text-align: center;
-  letter-spacing: 0.5px;
-  color: var(--celestial-blue);
-  font-family: var(--title-font);
-}
-
-.tarifas .tarifas-wrapper-1 .tarifas-box p{
-  text-align: center;
-  letter-spacing: 0.5px;
-  color: var(--shade-of-white);
-}
-
-.tarifas .tarifas-btn-container{
-  padding-bottom: 40px;
-}
-
-.tarifas .tarifas-btn-container svg{
-  transform: rotate(180deg);
-  width: 50px;
-  height: auto;
-  position: absolute;
-  margin-top: 3rem;
-  margin-left: -3.5rem;
-}
-
-.tarifas .tarifas-wrapper-2{
   display: flex;
-  flex-direction: column;
   gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.tarifas .tarifas-wrapper-2 ul{
+.tarifas-text h5{
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--celestial-blue);
+}
+
+.tarifas-text-wrapper{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 1rem;
   justify-content: center;
 }
 
-.tarifas .tarifas-wrapper-2 ul li{
+.tarifas-text-wrapper h6{
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: wrap;
   gap: 5px;
-  color: var(--shade-of-white);
-}
-
-.tarifas .tarifas-wrapper-2 i{
-  font-size: 10px;
-  color: var(--cyan);
-}
-
-.tarifas .tarifas-wrapper-2 span{
-  text-transform: uppercase;
-  font-weight: bold;
-  color: var(--flat-white);
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.tarifas .tarifas-wrapper-2 h4{
-  color: var(--celestial-blue);
-  font-size: 1.2rem;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  font-family: var(--title-font);
-}
-
-.tarifas .tarifas-wrapper-2 svg{
-  width: 60px;
-  height: auto;
-  transform: rotate(296deg);
-  margin: 0 29% 0 auto;
-}
-
-.tarifas .tarifas-wrapper-3{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  width: 100%;
-  background: rgb(8,80,60);
-  background: linear-gradient(180deg, rgba(8,80,60,0.4738270308123249) 0%, rgba(0,26,49,1) 100%);
-  padding: 20px;
-  border-radius: 20px;
-}
-
-.tarifas .tarifas-wrapper-3 h4{
-  text-transform: uppercase;
-  font-family: var(--title-font);
-  letter-spacing: 1px;
-  font-size: 1.5rem;
-}
-
-.tarifas .tarifas-wrapper-3 i{
-  color: var(--subtle-cyan);
-}
-
-.tarifas .tarifas-wrapper-3 span{
-  color: var(--cyan);
-  font-size: 1.5rem;
-}
-
-.tarifas .tarifas-wrapper-3 h5{
-  text-align: right;
   font-size: 1rem;
   text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-
-
-
-.tarifas-ecuation{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-  gap: 2rem;
-}
-
-.tarifas-ecuation h4{
-  text-transform: uppercase;
-  font-family: var(--title-font);
-  letter-spacing: 1px;
-  font-size: 1.5rem;
-  text-align: center;
-}
-
-.ecuation-wrapper{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 3rem;
-}
-
-.ecuation-box{
-  display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  width: 300px;
-  gap: 0.5rem;
-  padding: 10px;
 }
 
-.ecuation-box span{
+.tarifas-text-wrapper span{
+  padding-left: 2rem;
   font-size: 2rem;
   color: var(--cyan);
-  font-weight: bold;
 }
 
-.ecuation-box h5{
-  font-size: 0.8rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
-.ecuation-box i{
-  font-size: 2rem;
+.tarifas-text-wrapper i{
+  font-size: 0.5rem;
   color: var(--mint-green);
 }
 
-.box-2{
+.tar-desc{
+  font-size: 12px;
+  margin: 0 0 1rem 1rem;
+}
+
+.tarifas-result{
   background: rgb(8,80,60);
   background: linear-gradient(180deg, rgba(8,80,60,0.4738270308123249) 0%, rgba(0,26,49,1) 100%);
   border-radius: 20px;
+  padding: 20px;
+  text-align: center;
 }
+
+.tarifas-result h5{
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: var(--celestial-blue);
+  letter-spacing: 1px;
+}
+
+.tarifas-result span{
+  font-size: 3rem;
+  color: var(--cyan);
+  font-weight: bold;
+}
+
+.tarifas-result h4{
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.pie {
+  margin: 5vmin auto;
+  border-radius: 50%;
+  width: 90vmin;
+  height: 90vmin;
+  overflow: hidden;
+  background: linear-gradient(-21deg, #159b4d 50%, transparent 50%), linear-gradient(to right, #159b4d 50%, #08503c 50%);
+
+  box-shadow: rgb(48,54,61) 0px 0px 0px 1px inset,rgb(1,4,9) 0px 8px 24px 0px;
+}
+
+.vibruz-pie {
+  margin: 20vmin 0 0 55vmin;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.beneficio-pie {
+  margin: 33vmin;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+
+
+
+
+
 /*=================================MARQUEE SECTION=================================*/
 
 .marquee-wrapper{
@@ -1596,10 +1503,6 @@ footer li{
   .button {
       font-size: 0.8rem;
   }
-
-  .tarifas .tarifas-wrapper-1{
-    gap: 30px;
-  }
     
 }
 
@@ -1722,20 +1625,19 @@ footer li{
       font-size: 0.8rem;
     }
 
-    .tarifas .tarifas-wrapper-1{
-      gap: 30px;
+    .tarifas-text-wrapper h6{
+      font-size: 0.6rem;
     }
 
-    .tarifas .tarifas-wrapper-2 h4{
+    .tarifas-result h5 {
       font-size: 0.8rem;
-      text-align: center;
     }
 
-    .tarifas .tarifas-wrapper-2 ul li{
-      font-size: 12px;
+    .tarifas-result span {
+      font-size: 2rem;
     }
 
-    .tarifas .tarifas-wrapper-3{
-      font-size: 90%;
+    .tarifas-result h4 {
+      font-size: 1.5rem;
     }
 }
